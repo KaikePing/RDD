@@ -69,10 +69,10 @@ Computational Efficiency Metrics for YOLO Models
 |--------------|------------|----------------|----------------|----------------|-----------|---------------------------|
 | YOLOv5s      | 640        | 120.7          | 1.27           | 9.1            | 24.0      | 62                       |
 | YOLOv8s      | 640        | 128.4          | 1.20           | 11.2           | 28.6      | 65                       |
-| YOLO-v11s    | 640        | 90.0      | 2.5       | 9.4            | 21.5      | 55                       |
+| YOLO11s    | 640        | 90.0      | 2.5       | 9.4            | 21.5      | 55                       |
 
-In terms of model architecture, all three versions maintained a consistent input resolution of 640×640 pixels. YOLO-v11 demonstrated the most efficient CPU inference time at 90.0 ms, approximately 25% faster than both YOLOv5 (120.7 ms) and YOLOv8 (128.4 ms). However, when tested on an NVIDIA A100 GPU with TensorRT optimization, YOLOv8 achieved the fastest inference at 1.20 ms, followed closely by YOLOv5 at 1.27 ms, while YOLO-v11 required 2.5 ms.
+In terms of model architecture, all three versions maintained a consistent input resolution of 640×640 pixels. YOLO11 demonstrated the most efficient CPU inference time at 90.0 ms, approximately 25% faster than both YOLOv5 (120.7 ms) and YOLOv8 (128.4 ms). However, when tested on an NVIDIA A100 GPU with TensorRT optimization, YOLOv8 achieved the fastest inference at 1.20 ms, followed closely by YOLOv5 at 1.27 ms, while YOLO11 required 2.5 ms.
 
-Regarding model complexity, YOLOv8 had the largest parameter count at 11.2M and the highest computational demands at 28.6B FLOPs. In contrast, YOLO-v11 maintained a more balanced profile with 9.4M parameters and the lowest FLOPs count of 21.5B, while YOLOv5 showed similar efficiency with 9.1M parameters and 24.0B FLOPs.
+Regarding model complexity, YOLOv8 had the largest parameter count at 11.2M and the highest computational demands at 28.6B FLOPs. In contrast, YOLO11 maintained a more balanced profile with 9.4M parameters and the lowest FLOPs count of 21.5B, while YOLOv5 showed similar efficiency with 9.1M parameters and 24.0B FLOPs.
 
-Training efficiency was evaluated using a batch size of 16 across 100 epochs for all models. YOLO-v11 demonstrated the fastest training speed at approximately 55 seconds per epoch. YOLOv5 and YOLOv8 required approximately 62 and 65 seconds per epoch, respectively, resulting in total training times of about 1.7 hours for YOLOv5, 1.8 hours for YOLOv8, and 1.5 hours for YOLO-v11.
+Training efficiency was evaluated using a batch size of 16 across 100 epochs for all models. YOLO11 demonstrated the fastest training speed at approximately 55 seconds per epoch. YOLOv5 and YOLOv8 required approximately 62 and 65 seconds per epoch, respectively, resulting in total training times of about 1.7 hours for YOLOv5, 1.8 hours for YOLOv8, and 1.5 hours for YOLO11.
