@@ -28,7 +28,6 @@ datasets/
 
 # Output files
 runs/
-results/
 
 # System files
 .DS_Store
